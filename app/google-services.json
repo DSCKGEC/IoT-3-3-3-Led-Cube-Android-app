@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "538804577761",
+    "firebase_url": "https://iot-3x3x3-led-cube-default-rtdb.firebaseio.com",
+    "project_id": "iot-3x3x3-led-cube",
+    "storage_bucket": "iot-3x3x3-led-cube.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538804577761:android:754b6979a9ef6925dadea0",
+        "android_client_info": {
+          "package_name": "com.example.iot_3x3x3_ledcube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538804577761-cn3v8bf3or1qr1p5s2gc912qjq9rh2co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpObKJC37oSwGb2NbVGjhVFX15l76Fhlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538804577761-cn3v8bf3or1qr1p5s2gc912qjq9rh2co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

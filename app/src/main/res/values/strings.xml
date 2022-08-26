@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IoT-3X3X3-ledcube</string>
+    <string name="power">Power</string>
+    <string name="on">ON</string>
+    <string name="OFF">OFF</string>
+    <string name="pattern_1">Pattern-1</string>
+    <string name="pattern_4">Pattern-4</string>
+    <string name="pattern_7">Pattern-7</string>
+    <string name="pattern_2">Pattern-2</string>
+    <string name="pattern_5">Pattern-5</string>
+    <string name="pattern_8">Pattern-8</string>
+    <string name="pattern_3">Pattern-3</string>
+    <string name="pattern_6">Pattern-6</string>
+    <string name="pattern_9">Pattern-9</string>
+</resources>

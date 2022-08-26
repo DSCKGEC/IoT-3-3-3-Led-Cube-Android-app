@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        app:neumorph_shapeType="pressed"
+        >
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="150dp"
+        android:id="@+id/displayonoff"
+        app:neumorph_shapeAppearance="@style/ShapeAppearance.Neumorph.FloatingActionButton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="90sp"
+            android:text="@string/on"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/ic_baseline_power_settings_new_24"
+        android:id="@+id/buttononoff"
+        app:neumorph_shapeAppearance="@style/ShapeAppearance.Neumorph.FloatingActionButton">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_power_settings_new_24"
+            android:contentDescription="@string/power" />
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/pattern1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:neumorph_shapeType="flat">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_1"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pattern4"
+        android:layout_below="@+id/pattern1"
+
+        android:textSize="20sp"
+        android:textColor="#fff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_4"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pattern7"
+        android:layout_below="@+id/pattern4"
+
+        android:textSize="12sp"
+        android:textColor="#fff">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/pattern_7"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/pattern2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@+id/pattern1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_2"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pattern5"
+        android:layout_toEndOf="@+id/pattern4"
+        android:layout_below="@+id/pattern2"
+
+        android:textSize="18sp"
+        android:textColor="#fff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_5"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pattern8"
+        android:layout_toEndOf="@+id/pattern7"
+        android:layout_below="@+id/pattern5"
+
+        android:textSize="11sp"
+        android:textColor="#fff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_8"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/pattern3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@+id/pattern2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_3"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pattern6"
+        android:layout_toEndOf="@+id/pattern5"
+        android:layout_below="@+id/pattern3"
+
+        android:textSize="15sp"
+        android:textColor="#fff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_6"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pattern9"
+        android:layout_toEndOf="@+id/pattern8"
+        android:layout_below="@+id/pattern6"
+
+        android:textSize="11sp"
+        android:textColor="#FFFFFF">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pattern_9"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+    </soup.neumorphism.NeumorphCardView>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/lightSw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pattern9"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:checked="false"
+        android:padding="10dp"
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:switchPadding="10dp"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"
+
+        />
+
+
+</RelativeLayout>
