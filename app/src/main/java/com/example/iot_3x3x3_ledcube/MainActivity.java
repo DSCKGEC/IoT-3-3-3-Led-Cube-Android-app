@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ToggleButton;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -18,7 +19,8 @@ import soup.neumorphism.NeumorphImageButton;
 
 public class MainActivity extends AppCompatActivity {
     DatabaseReference RootRef;
-    NeumorphCardView displayonoff, buttononoff, pattern1, pattern4, pattern7, pattern2, pattern5, pattern8, pattern3, pattern6, pattern9;
+    ToggleButton toggleButton;
+    NeumorphCardView displayonoff, pattern1, pattern4, pattern7, pattern2, pattern5, pattern8, pattern3, pattern6, pattern9;
     SwitchCompat lightSw;
 
     android.content.SharedPreferences SharedPreferences=null;
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 //
         lightSw = findViewById(R.id.lightSw);
 //
-        buttononoff =(NeumorphCardView) findViewById(R.id.buttononoff);
+        toggleButton =(ToggleButton) findViewById(R.id.toggleButton);
         displayonoff =(NeumorphCardView) findViewById(R.id.displayonoff);
 
         pattern1 =(NeumorphCardView) findViewById(R.id.pattern1);
@@ -70,13 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        buttononoff.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RootRef.child("Cube").child("pattern").setValue(11);
 
-            }
-        });
         pattern1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -140,13 +136,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
 
-        buttononoff.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    RootRef.child("Cube").child("state").setValue(0);
+                        RootRef.child("Cube").child("state").setValue(1);
+
+                } else {
+
+                        RootRef.child("Cube").child("state").setValue(0);
+
+                }
             }
         });
+//        toggleButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                    RootRef.child("Cube").child("state").setValue(0);
+//            }
+//        });
 
 
     }

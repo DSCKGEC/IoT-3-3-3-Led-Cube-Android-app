@@ -43,12 +43,25 @@
         android:background="@drawable/ic_baseline_power_settings_new_24"
         android:id="@+id/buttononoff"
         app:neumorph_shapeAppearance="@style/ShapeAppearance.Neumorph.FloatingActionButton">
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_baseline_power_settings_new_24"
-            android:contentDescription="@string/power" />
+            android:contentDescription="@string/power"
+            />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+
+            android:alpha="0"
+            />
+
+
     </soup.neumorphism.NeumorphCardView>
 
 
